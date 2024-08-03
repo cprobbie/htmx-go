@@ -1,0 +1,11 @@
+<li id="task-{{.id}}">
+  {{.title}} - {{.status}}
+  <button
+    text="{{.title}} - {{.status}}"
+    hx-delete="/todos/{{.id}}"
+    hx-target="#task-{{.id}}"
+    hx-swap="outerHTML"
+  >
+    Delete
+  </button>
+</li>
